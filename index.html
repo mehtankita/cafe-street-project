@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Cafe Street</title>
   <link rel="stylesheet" href="./assets/css/style.css">
   <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
@@ -29,7 +30,7 @@
         <!-- hero -->
 
         <section class="hero">
-            <div class="container">
+            <div class="container position-relative">
 
                 <div class="hero-left">
                     <h1>Enjoy your <span>Coffee</span><br>before your activity</h1>
@@ -44,67 +45,94 @@
                     <img src="assets/images/img-hero.png" alt="hero image" class="position-relative">
 
                 </div>
-             <img src="./assets/photos/bg_img_hero.png" alt="" class="hero-bg-coffe-top">
-             <img src="./assets/photos/bg_img_hero.png" alt="" class="hero-bg-coffe-down">
-
+             <img src="./assets/images/coffee-seed.png" alt="" class="hero-top">
+            <img src="./assets/images/coffee-seed.png" alt="" class="hero-bottom">
             </div>
-            <img src="./assets/images/coffee-seed.png" alt="" class="hero-top">
-           <img src="./assets/images/coffee-seed.png" alt="" class="hero-bottom">
         </section>
         <!-- popular -->
         <section class="popular">
           <div class="container">
             
-            <h2>Popular Now</h2>
+            <h2>Popular <span>Now</span></h2>
             <div class="card-all">
-                <div class="card-1">
+                <div class="card position-relative">
+                  <img src="./assets/icons/rating_product.png" alt=""  class="popular-card-rating position-absolute">
                     <img src="./assets/images/Vanilla Latte.jpg" alt="">
-                    <h3>Vanilla Latte</h3>
-                    <!-- <p>21k</p> -->
-                    <button>Hot</button>
-                    <button>cold</button>
-
-                    <a href="#"><img src="./assets/icone/bag.svg" alt=""></a>
+                    <div class="popular-card-bottom d-flex">
+                      <div class="popular-card-left d-flex flex-column">
+                        <h3>Vanilla Latte</h3>
+                        <!-- <p>21k</p> -->
+                         <div class="popular-card-button d-flex">
+                           <button>Hot</button>
+                           <button>cold</button>
+                         </div>
+                      </div>
+                      <div class="popular-card-right d-flex flex-column">
+                        <h3>21 K</h3>
+                        <a href="#"><img src="./assets/icons/card.svg" alt="" class="popular-card-cart-icon"></a>
+                      </div>
+                    </div>
                 </div>
-                <div class="card">
+                <div class="card position-relative">
+                  <img src="./assets/icons/rating_product.png" alt=""  class="popular-card-rating position-absolute">
                     <img src="./assets/images/Espresso.jpg" alt="">
-                    <h3>Espresso</h3>
-                    <!-- <p>12k</p> -->
-                    <button>Hot</button>
-                    <button>cold</button>
-                    <a href="#"><img src="./assets/icone/bag.svg" alt=""></a>
-
+                    <div class="popular-card-bottom d-flex">
+                      <div class="popular-card-left d-flex flex-column">
+                        <h3>Espresso</h3>
+                        <!-- <p>21k</p> -->
+                         <div class="popular-card-button d-flex">
+                           <button>Hot</button>
+                           <button>cold</button>
+                         </div>
+                      </div>
+                      <div class="popular-card-right d-flex flex-column">
+                        <h3>12 K</h3>
+                        <a href="#"><img src="./assets/icons/card.svg" alt="" class="popular-card-cart-icon"></a>
+                      </div>
+                    </div>
                 </div>
-                <div class="card">
+                <div class="card position-relative">
+                  <img src="./assets/icons/rating_product.png" alt=""  class="popular-card-rating position-absolute">
                     <img src="./assets/images/Hazelnut latte.jpg" alt="">
-                    <h3>Hazelnut Latte</h3>
-                    <!-- <p>23k</p> -->
-                    <button>Hot</button>
-                    <button>cold</button>
-                    <a href="#"><img src="./assets/icone/bag.svg" alt=""></a>
+                    <div class="popular-card-bottom d-flex">
+                      <div class="popular-card-left d-flex flex-column">
+                        <h3>Hazelnut Latte</h3>
+                        <!-- <p>21k</p> -->
+                         <div class="popular-card-button d-flex">
+                           <button>Hot</button>
+                           <button>cold</button>
+                         </div>
+                      </div>
+                      <div class="popular-card-right d-flex flex-column">
+                        <h3>23 K</h3>
+                        <a href="#"><img src="./assets/icons/card.svg" alt="" class="popular-card-cart-icon"></a>
+                      </div>
+                    </div>
                 </div>
             </div>
           </div>
         </section>
         <!-- Section -->
-<section class="process position-relative">
+<section class="process process-delivery position-relative">
+  <h2>How to use delivery <span>service</span></h2>
   <div class="container">
-
+    
     <!-- Step 1 -->
-    <div class="process-card">
+    <div class="process-card d-grid">
       <img src="./assets/icons/coffee-1.svg" alt="Choose Coffee">
       <h3>choose your coffee</h3>
+      <p>there are 20+ coffees for you</p>
     </div>
 
     <!-- Step 2 -->
-    <div class="process-card">
+    <div class="process-card d-grid">
       <img src="./assets/icons/coffee-delivery.svg" alt="Delivery">
       <h3>we delivery it to you</h3>
       <p>Choose delivery service</p>
     </div>
 
     <!-- Step 3 -->
-    <div class="process-card">
+    <div class="process-card d-grid">
       <img src="./assets/icons/coffee-cup 2.svg" alt="Enjoy Coffee">
       <h3>Enjoy your coffee</h3>
       <p>Choose delivery service</p>
@@ -141,48 +169,166 @@
 
   </div>
 </section>
-<section class="process">
+<section class="process special-section">
+  <h2 class="section-title process-heading">Special menu <span>for you</span></h2>
   <div class="container">
     
-    <h2 class="section-title">How to use delivery <span>service</span></h2>
 
-    <div class="process-wrapper">
+    <div class="menu-process-wrapper">
 
       <!-- Step 1 -->
-      <div class="process-card">
+      <div class="process-card position-relative">
+        <img src="./assets/icons/rating_product.png" alt="" class="special-rating position-absolute">
         <div class="icon">
-          <img src="./assets/icons/choose-coffee.png" alt="Choose Coffee">
+          <img src="./assets/images/special-1.jpg" alt="" class="img-responsive">
         </div>
-        <h3>Choose your coffee</h3>
-        <p>There are 20+ coffees for you</p>
-      </div>
+        <div class="special-card-bottom d-flex">
+          <div class="special-card-content d-flex flex-column">
+            <h3>Sandwich</h3>
+            <p>bread with meat and vegetables</p>
+          </div>
+          <div class="special-card-right d-flex flex-column">
+            <h3>12 K</h3>
+            <img src="./assets/icons/card.svg" alt="" class="cart-icon">
+          </div>
+        </div>
+      </div> 
 
       <!-- Step 2 -->
-      <div class="process-card">
+      <div class="process-card position-relative">
+        <img src="./assets/icons/rating_product.png" alt="" class="special-rating position-absolute">
         <div class="icon">
-          <img src="./assets/icons/delivery.png" alt="Delivery">
+          <img src="./assets/images/special-2.jpg" alt="" class="img-responsive">
         </div>
-        <h3>We deliver it to you</h3>
-        <p>Choose delivery service</p>
-      </div>
+        <div class="special-card-bottom d-flex">
+          <div class="special-card-content d-flex flex-column">
+            <h3>Hot Milk</h3>
+            <p>Hot Milk with less sugar</p>
+          </div>
+          <div class="special-card-right d-flex flex-column">
+            <h3>12 K</h3>
+            <img src="./assets/icons/card.svg" alt="" class="cart-icon">
+          </div>
+        </div>
+      </div> 
 
       <!-- Step 3 -->
-      <div class="process-card">
+      <div class="process-card position-relative">
+        <img src="./assets/icons/rating_product.png" alt="" class="special-rating position-absolute">
         <div class="icon">
-          <img src="./assets/icons/enjoy.png" alt="Enjoy Coffee">
+          <img src="./assets/images/special-3.jpg" alt="" class="img-responsive">
         </div>
-        <h3>Enjoy your coffee</h3>
-        <p>Enjoy your coffee with us</p>
-      </div>
+        <div class="special-card-bottom d-flex">
+          <div class="special-card-content d-flex flex-column">
+            <h3>Coffe Ice Cream</h3>
+            <p>Coffe with ice cream vanilla</p>
+          </div>
+          <div class="special-card-right d-flex flex-column">
+            <h3>12 K</h3>
+            <img src="./assets/icons/card.svg" alt="" class="cart-icon">
+          </div>
+        </div>
+      </div> 
+      <!-- Step 4 -->
+      <div class="process-card position-relative">
+        <img src="./assets/icons/rating_product.png" alt="" class="special-rating position-absolute">
+        <div class="icon">
+          <img src="./assets/images/special-4.jpg" alt="" class="img-responsive">
+        </div>
+        <div class="special-card-bottom d-flex">
+          <div class="special-card-content d-flex flex-column">
+            <h3>Cappucino</h3>
+            <p>Hot Cappucino</p>
+          </div>
+          <div class="special-card-right d-flex flex-column">
+            <h3>12 K</h3>
+            <img src="./assets/icons/card.svg" alt="" class="cart-icon">
+          </div>
+        </div>
+      </div> 
+
+      <!-- Step 5 -->
+      <div class="process-card position-relative">
+        <img src="./assets/icons/rating_product.png" alt="" class="special-rating position-absolute">
+        <div class="icon">
+          <img src="./assets/images/special-5.jpg" alt="" class="img-responsive">
+        </div>
+        <div class="special-card-bottom d-flex">
+          <div class="special-card-content d-flex flex-column">
+            <h3>Moccacinno</h3>
+            <p>Hot Moccacino</p>
+          </div>
+          <div class="special-card-right d-flex flex-column">
+            <h3>12 K</h3>
+            <img src="./assets/icons/card.svg" alt="" class="cart-icon">
+          </div>
+        </div>
+      </div> 
+
+      <!-- Step 6 -->
+       <div class="process-card position-relative">
+        <img src="./assets/icons/rating_product.png" alt="" class="special-rating position-absolute">
+        <div class="icon">
+          <img src="./assets/images/special-6.jpg" alt="" class="img-responsive">
+        </div>
+        <div class="special-card-bottom d-flex">
+          <div class="special-card-content d-flex flex-column">
+            <h3>Waffle Ice Crem</h3>
+            <p>Wafle with Ice cream</p>
+          </div>
+          <div class="special-card-right d-flex flex-column">
+            <h3>12 K</h3>
+            <img src="./assets/icons/card.svg" alt="" class="cart-icon">
+          </div>
+        </div>
+      </div> 
 
     </div>
 
   </div>
 </section>
+<section class="testimonials position-relative">
+  <div class="testimonial-wrapper d-flex">
+    <img src="./assets/images/about-us-bg-image.jpg" alt="" class="about-us-bg-image position-absolute">
+    <div class="testimonial-content d-grid">
+      <h2>What they say about us</h2>
+      <p>We always provide the best service and always maintain the quality of coffee</p>
+    </div>
+    <div class="testimonial-cards d-flex">
+      <div class="testimonial-card">
+        <div class="testimonial-image">
+          <img src="./assets/images/testimonial-image-1.jpg" alt="">
+        </div>
+        <div class="testimonial-image-content">
+          <h3>Naura</h3>
+          <p>I really love the cappucino, the coffee was very smooth</p>
+        </div>
+      </div>
+      <div class="testimonial-card">
+        <div class="testimonial-image">
+          <img src="./assets/images/testimonial-image-2.jpg" alt="">
+        </div>
+        <div class="testimonial-image-content">
+          <h3>John</h3>
+          <p>this coffee shop is very convenient</p>
+        </div>
+      </div>
+      <div class="testimonial-card">
+        <div class="testimonial-image">
+          <img src="./assets/images/testimonial-image-3.jpg" alt="">
+        </div>
+        <div class="testimonial-image-content">
+          <h3>Azura</h3>
+          <p>the coffee menu here is very much</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
     </main>
   <footer>
     <section class="footer-content">
-      <p class="text-white ">Subscribe to get 50% discount price</p>
+      <p class="text-white">Subscribe to get 50% discount price</p>
       <form action="#" method="post" class="d-flex bg-white position-relative">
         <input type="email" id="email" name="email" placeholder="Email address" />
         <button aria-label="Order Now">Order now</button>
